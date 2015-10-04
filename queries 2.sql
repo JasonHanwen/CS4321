@@ -1,0 +1,1 @@
+SELECT Sailors.A,Sailors.B FROM Sailors;

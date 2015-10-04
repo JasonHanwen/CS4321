@@ -1,0 +1,17 @@
+1 Top class for my program is queryParser.java in src.OperatorBuild  directory
+
+2 In terms of the logic to achieve join condition, I make a joinExpressionVisitor that cuts all expression to two catagories, the one is SelectionExpression, the other is JoinExpression. Can when I build join tree structure, I put the selectionExpression first for slection Operator and joinExpression to join Operator.
+
+3 there are some bugs in my code. 
+First, I can not support SELECT S.A, S.C FROM Sailors S ORDER BY S.C, because I do not put schema to operator. I just set a common schema to get the attribute index for that schema.
+Secondly, I can not support join more than two tabples. My program can just support joining two tables.
+Thirdly, I did not put order by and distinct behind my join operator. Because of the schema design.
+
+The data stores in samples/input/db/data/ subdirectory.
+The schema stores stores in samples/input/db/schema.txt.
+
+
+
+
+
+
